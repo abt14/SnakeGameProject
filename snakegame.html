@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake Game</title>
+    <style>
+        body
+        {
+            margin:0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            background-color: #d0f0ff;
+        }
+        h1{
+            font-family: fantasy;
+            font-size: 80px;
+            background: -webkit-linear-gradient(#00d400,#001679);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        canvas{
+            border: black solid 20px;
+        }
+        #Instructions{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+            font-size: 25px;
+            padding: 0px;
+            margin:0px;
+            color: rgb(180, 1, 1);
+        }
+        #rockAlert{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+            font-size: 25px;
+            padding-top: 10px;
+            margin: 0px;
+            color: rgb(95, 93, 93);
+        }
+        #mushroomAlert{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+            font-size: 25px;
+            padding: 0px;
+            margin: 0px;
+            color:purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snake Game</h1>
+    <p id="Instructions">Eat the red fruit to grow the snake!</p>
+    <canvas id = "game" width="400" height="400"></canvas>
+    <script src="snakegame.js"></script>
+    <p id="rockAlert"></p>
+    <p id="mushroomAlert"></p>
+</body>
+</html>
